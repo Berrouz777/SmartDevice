@@ -1,0 +1,111 @@
+.header {
+  min-height: 878px;
+  padding: 0 40px;
+  background-color: $black-blue;
+  background-image: url("../img/background-header.png"), url("../img/svg-header.svg");
+  background-size: 100% 878px, 670px 637px;
+  background-repeat: no-repeat;
+  background-position: 0 0, 910px 120px;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-header@2x.png");
+  }
+}
+
+.header__container {
+  position: relative;
+  max-width: 1415px;
+  //   max-width: 1335px;
+  margin: 0 auto;
+}
+
+.header__container>h1 {
+  z-index: 1;
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 5.8px;
+  color: $white;
+  text-transform: uppercase;
+  margin: 255px 0 0 -5px;
+  cursor: default;
+}
+
+.header__container>p {
+  z-index: 1;
+  position: relative;
+  font-size: 22px;
+  line-height: 160%;
+  width: 683px;
+  margin: 64px 0 57px 93px;
+  color: $white;
+  text-transform: lowercase;
+  cursor: default;
+  //   outline: 1px solid red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    top: 17px;
+    left: -93px;
+    background-color: $white;
+  }
+}
+
+.header__link {
+  position: absolute;
+  bottom: -160px;
+  left: -45px;
+  font-size: 14px;
+  background-color: transparent;
+  color: transparentize($color: $white, $amount: 0.5);
+  border: none;
+  transform: rotate(-90deg);
+  cursor: pointer;
+
+  &:hover {
+    color: transparentize($color: $white, $amount: 0.2);
+  }
+
+  &:active {
+    color: transparentize($color: $white, $amount: 0.8);
+  }
+}
+
+.header__button {
+  z-index: 1;
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: $white;
+  background-color: $light-blue;
+  border: none;
+  border-radius: 5px;
+  padding: 17px 46px 19px 46px;
+  margin-left: 93px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: transparentize($color: $light-blue, $amount: 0.4);
+  }
+
+  &:active {
+    color: transparentize($color: $white, $amount: 0.4);
+    background-color: transparentize($color: $light-blue, $amount: 0.6);
+  }
+}
+
+.header__container img {
+  position: absolute;
+  top: 223px;
+  right: -75px;
+  width: 705px;
+  height: 515px;
+}
