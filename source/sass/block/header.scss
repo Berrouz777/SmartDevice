@@ -11,12 +11,25 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-header@2x.png");
   }
+
+  @media (max-width: $tablet-width) {
+    min-height: 686px;
+    padding: 0 25px;
+    background-size: 1514px 686px, 528px 502px;
+    background-position: -372px 0px, 440px -35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 647px;
+    padding: 0 17px;
+    background-size: 1446px 834px, 505px 480px;
+    background-position: -624px 0, 151px -45px;
+  }
 }
 
 .header__container {
   position: relative;
   max-width: 1415px;
-  //   max-width: 1335px;
   margin: 0 auto;
 }
 
@@ -25,12 +38,28 @@
   position: relative;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
+  line-height: 100%;
   font-weight: 700;
   letter-spacing: 5.8px;
   color: $white;
   text-transform: uppercase;
-  margin: 255px 0 0 -5px;
+  margin: 230px 0 0 -5px;
   cursor: default;
+
+  @media (max-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 115%;
+    letter-spacing: 4px;
+    width: 470px;
+    margin: 108px 0 0 65px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 40px;
+    letter-spacing: 2.7px;
+    width: 100%;
+    margin: 225px 0 0 0;
+  }
 }
 
 .header__container>p {
@@ -39,7 +68,7 @@
   font-size: 22px;
   line-height: 160%;
   width: 683px;
-  margin: 64px 0 57px 93px;
+  margin: 34px 0 57px 93px;
   color: $white;
   text-transform: lowercase;
   cursor: default;
@@ -53,6 +82,24 @@
     top: 17px;
     left: -93px;
     background-color: $white;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    width: 360px;
+    margin: 30px 0 67px 113px;
+
+    &::before {
+      width: 33px;
+      top: 15px;
+      left: -45px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    width: 100%;
+    margin: 29px 0 40px 48px;
   }
 }
 
@@ -73,6 +120,10 @@
 
   &:active {
     color: transparentize($color: $white, $amount: 0.8);
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -100,6 +151,35 @@
     color: transparentize($color: $white, $amount: 0.4);
     background-color: transparentize($color: $light-blue, $amount: 0.6);
   }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 115px;
+    padding: 17px 30px 19px 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    width: 289px;
+    padding: 0;
+    margin: 0;
+    color: transparent;
+    background-color: transparent;
+    // outline: 1px solid red;
+
+    &::after {
+      content: "Бесплатная консультация";
+      position: absolute;
+      width: 289px;
+      height: 37px;
+      top: 0;
+      left: 0;
+      color: $white;
+      background-color: $light-blue;
+      border-radius: 5px;
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
 }
 
 .header__container img {
@@ -108,4 +188,18 @@
   right: -75px;
   width: 705px;
   height: 515px;
+
+  @media (max-width: $tablet-width) {
+    top: 92px;
+    right: -230px;
+    width: 465px;
+    height: 340px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 75px;
+    right: -23px;
+    width: 301px;
+    height: 220px;
+  }
 }

@@ -4,43 +4,71 @@
   align-items: center;
   margin-top: 35px;
   //   outline: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 17px;
+  }
 }
 
 .nav__logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-//   margin-top: 5px;
-  //   outline: 1px solid red;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .nav__logo svg {
-  grid-column: 1/2;
-  grid-row: 1/3;
+  //   grid-column: 1/2;
+  //   grid-row: 1/3;
+
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .nav__logo p {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
   color: $white;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  margin: 5px 0 0 -32px;
-  cursor: default;
+  //   font-family: "Roboto Condensed", "Arial", sans-serif;
+  //   font-size: 25px;
+  //   font-weight: 700;
+  //   color: $white;
+  //   grid-column: 2/3;
+  //   grid-row: 1/2;
+  //   margin: 5px 0 0 -32px;
+  //   cursor: default;
   //   outline: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav__logo span {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: $grey;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin: 0 0 0 -32px;
-  cursor: default;
+  //   font-family: "Roboto", "Arial", sans-serif;
+  //   font-size: 12px;
+  //   font-weight: 500;
+  //   color: $grey;
+  //   grid-column: 2/3;
+  //   grid-row: 2/3;
+  //   margin: 0 0 0 -32px;
+  //   cursor: default;
   //   outline: 1px solid red;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav__email {
@@ -51,6 +79,7 @@
   padding-left: 40px;
   margin-top: -10px;
   margin-left: auto;
+  //   outline: 1px solid red;
 
   &:hover {
     background-color: transparentize($color: $light-blue, $amount: 0.8);
@@ -60,12 +89,35 @@
   &:active {
     color: transparentize($color: $white, $amount: 0.5);
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 25px;
+    margin: -7px 8px 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: -5px -3px 0 auto;
+  }
+}
+
+.nav__email span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__email svg {
+  fill: $light-blue;
   position: absolute;
   top: 5px;
   left: 0px;
+
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .nav__tel {
@@ -75,6 +127,7 @@
   text-decoration: none;
   padding-left: 45px;
   margin: -10px 0 0 76px;
+  //   outline: 1px solid red;
 
   &:hover {
     background-color: transparentize($color: $light-blue, $amount: 0.8);
@@ -84,12 +137,30 @@
   &:active {
     color: transparentize($color: $white, $amount: 0.5);
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 25px;
+    margin: -7px -15px 0 0;
+  }
+}
+
+.nav__tel span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__tel svg {
+  fill: $light-blue;
   position: absolute;
   top: 3px;
   left: 12px;
+
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    top: 10px;
+  }
 }
 
 .nav__call {
@@ -112,5 +183,9 @@
 
   &:active {
     color: transparentize($color: $white, $amount: 0.5);
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
