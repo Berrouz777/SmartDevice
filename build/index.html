@@ -112,38 +112,97 @@
     <section class="advantages">
       <h2 class="visually-hidden">Приемущества</h2>
       <ul class="advantages__list">
-        <li class="advantages__item">
-          <svg width="29" height="35">
+        <li class="advantages__item advantages__item--stopwatch">
+          <svg class="advantages__item-svg advantages__item-svg--stopwatch" width="29" height="35">
             <use xlink:href="#stopwatch"></use>
           </svg>
           <p>Оперативные сроки</p>
-          <span>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</span>
+          <span>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+            заказы плат и комплектующих в самые короткие сроки</span>
         </li>
-        <li class="advantages__item">
-          <svg width="35" height="35">
+        <li class="advantages__item advantages__item--hired">
+          <svg class="advantages__item-svg advantages__item-svg--hired" width="35" height="35">
             <use xlink:href="#hired"></use>
           </svg>
           <p>Крупные поставщики</p>
-          <span>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</span>
+          <span>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</span>
         </li>
-        <li class="advantages__item">
-          <svg width="36" height="31">
+        <li class="advantages__item advantages__item--detective">
+          <svg class="advantages__item-svg advantages__item-svg--detective" width="36" height="31">
             <use xlink:href="#detective"></use>
           </svg>
           <p>Полная конфиденциальность</p>
-          <span>По желанию клиента  мы обеспечиваем полную конфеденциальность.</span>
+          <span>По желанию клиента мы обеспечиваем полную конфеденциальность.</span>
         </li>
-        <li class="advantages__item">
-          <svg width="35" height="35">
+        <li class="advantages__item advantages__item--tag">
+          <svg class="advantages__item-svg advantages__item-svg--tag" width="35" height="35">
             <use xlink:href="#tag"></use>
           </svg>
           <p>Персонализация стоимости</p>
-          <span>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</span>
+          <span>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+            устраивает.</span>
         </li>
       </ul>
     </section>
+    <section class="about">
+      <div class="about__container">
+        <h2>О компании</h2>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+          года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог <br>(РЖД),
+          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+          светотехники России.</p>
+        <a href="#">Подробнее</a>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__container">
+        <h2 class="visually-hidden">Товары и услуги</h2>
+        <p>Service Device предлагает следующие товары и услуги</p>
+        <ul class="services__list">
+          <li class="services__item">
+            <a href="#">
+              <p>Производство печатных плат</p>
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/item1.webp 1x, img/item1@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/item1-tablet.webp 1x, img/item1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/item1-desktop.webp 1x, img/item1-desktop@2x.webp 2x">
+                <!--  1x=290x256, 2x=580x512  -->
+                <img src="img/item1.jpg" srcset="img/item1@2x.jpg" width="370" height="620" alt="Печатная плата в увеличении">
+              </picture>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <p>Монтаж печатных плат</p>
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/item2.webp 1x, img/item2@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/item2-tablet.webp 1x, img/item2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/item2-desktop.webp 1x, img/item2-desktop@2x.webp 2x">
+                <!--  1x=290x256, 2x=580x512  -->
+                <img src="img/item2.jpg" srcset="img/item2@2x.jpg" width="370" height="620" alt="Микросхема в увеличении">
+              </picture>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <p>Комплектующие для светотехники</p>
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/item3.webp 1x, img/item3@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp" srcset="img/item3-tablet.webp 1x, img/item3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/item3-desktop.webp 1x, img/item3-desktop@2x.webp 2x">
+                <!--  1x=290x256, 2x=580x512  -->
+                <img src="img/item3.jpg" srcset="img/item3@2x.jpg" width="370" height="620" alt="Светодиодная лента">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__socials">
       <a class="footer__logo logo">
         <svg width="52" height="52">
@@ -227,7 +286,7 @@
       <p>Условия конфиденциальности</p>
       <p>Developed by wow studio</p>
     </div>
-  </footer>
+  </footer> -->
 
 </body>
 

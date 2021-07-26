@@ -11,10 +11,9 @@
 .footer__socials {
   position: relative;
   margin-right: 250px;
-//   outline: 1px solid red;
 }
 
-.footer__socials>p {
+.footer__socials > p {
   position: absolute;
   top: 170px;
   left: 300px;
@@ -37,7 +36,6 @@
   display: flex;
   flex-direction: row;
   margin-left: auto;
-//   outline: 1px solid red;
 }
 
 .footer__data-company {
@@ -58,7 +56,7 @@
   padding: 0;
 }
 
-.footer__data-item>* {
+.footer__data-item > * {
   font-size: 15px;
   line-height: 25px;
   margin: 0;
@@ -80,9 +78,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  //   grid-column: 1/3;
-  //   grid-row: 2/3;
-//   outline: 1px solid red;
 }
 
 .footer__copyrights p {

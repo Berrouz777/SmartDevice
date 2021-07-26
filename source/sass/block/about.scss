@@ -1,0 +1,143 @@
+.about {
+  margin-top: 77px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 35px;
+  }
+}
+
+.about__container {
+  max-width: 990px;
+  min-height: 317px;
+  margin: 0 auto;
+  padding-left: 180px;
+  background-image: url("../img/2005-desktop.png");
+  background-size: 220px 317px;
+  background-position: -30px 5px;
+  background-repeat: no-repeat;
+//   outline: 1px solid red;
+
+  @media (max-width: $tablet-width) {
+    max-width: 529px;
+    min-height: 400px;
+    padding-left: 180px;
+    background-size: 251px 362px;
+    background-position: -38px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 293px;
+    background-image: none;
+    padding-left: 0;
+  }
+}
+
+.about__container h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 140%;
+  font-weight: 400;
+  color: $grey;
+  margin: 0;
+  cursor: default;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+  }
+}
+
+.about__container p {
+  position: relative;
+  font-size: 16px;
+  line-height: 136%;
+  color: $grey;
+  margin: 0;
+  padding: 20px 10px 3px 0;
+  cursor: default;
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 27px 5px 0 3px;
+
+    &:last-of-type {
+      height: 87px;
+      padding-top: 21px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &::after {
+        content: "..";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: $grey;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 22px 0 3px 3px;
+
+    br {
+      display: inline-block;
+    }
+
+    &:last-of-type {
+      height: 170px;
+      padding-top: 39px;
+
+      &::after {
+        right: 137px;
+      }
+    }
+  }
+}
+
+.about__container a {
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: 0.3px;
+  font-weight: bold;
+  color: $light-blue;
+  background-color: transparent;
+  vertical-align: middle;
+  padding: 10px 51px;
+  margin: 35px 0 0 0;
+  border: 1px solid $light-blue;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $light-blue;
+    color: $white;
+  }
+
+  &:active {
+    background-color: transparentize($color: $light-blue, $amount: 0.3);
+    border-color: transparentize($color: $light-blue, $amount: 0.99);
+  }
+
+  @media (max-width: $tablet-width) {
+    letter-spacing: 0.6px;
+    margin: 42px 0 0 3px;
+    padding: 10px 51px 10px 49px;
+  }
+
+  @media (max-width: $mobile-width) {
+      margin-top: 30px;
+  }
+}

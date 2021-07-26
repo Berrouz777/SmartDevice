@@ -18,9 +18,11 @@
   //   display: grid;
   //   grid-template-columns: 1fr 1fr;
   //   grid-template-rows: 1fr 1fr;
+  //   outline: 1px solid red;
 
   @media (max-width: $mobile-width) {
     display: block;
+    width: 45px;
   }
 }
 
@@ -79,7 +81,7 @@
   padding-left: 40px;
   margin-top: -10px;
   margin-left: auto;
-  //   outline: 1px solid red;
+  // outline: 1px solid red;
 
   &:hover {
     background-color: transparentize($color: $light-blue, $amount: 0.8);
@@ -110,7 +112,7 @@
   fill: $light-blue;
   position: absolute;
   top: 5px;
-  left: 0px;
+  left: 0;
 
   @media (max-width: $tablet-width) {
     width: 24px;
