@@ -1,0 +1,153 @@
+.form__name input,
+.form__tel input,
+.form__field textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: $white;
+  background-color: transparentize($color: $white, $amount: 0.9);
+  margin-bottom: 40px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 134%;
+    color: $white;
+  }
+
+  &:hover {
+    outline: 1px solid $white;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 52px;
+    // margin-bottom: 42px;
+    padding-left: 19px;
+    padding-bottom: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+    padding: 0 0 10px 16px;
+  }
+}
+
+.form__field textarea {
+  height: 154px;
+  padding-top: 16px;
+  resize: none;
+
+  @media (max-width: $tablet-width) {
+    height: 159px;
+    padding-top: 11px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 104px;
+  }
+}
+
+.form__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  height: 45px;
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparentize($color: $white, $amount: 0.9);
+    // border-color: transparentize($color: $white, $amount: 0.9);
+  }
+
+  &:active {
+    color: transparentize($color: $white, $amount: 0.5);
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 3px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 47px;
+    margin-top: -9px;
+  }
+}
+
+.form__checkbox {
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 3px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+  }
+}
+
+.form__checkbox label {
+  position: relative;
+  align-self: center;
+  font-size: 14px;
+  line-height: 120%;
+  color: $white;
+  cursor: pointer;
+  //   outline: 1px solid red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $white;
+    top: 2px;
+    left: -32px;
+  }
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 9px;
+    top: 4px;
+    left: -28px;
+    background-color: $white;
+    clip-path: polygon(79% 0, 100% 0, 100% 100%, 38% 100%, 38% 82%, 79% 82%);
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    &::before {
+      background-color: transparentize($color: $white, $amount: 0.9);
+    }
+  }
+
+  &:active {
+    color: transparentize($color: $white, $amount: 0.3);
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 3px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 35px;
+  }
+}
+
+.form__checkbox input:checked+label::after {
+  display: block;
+}
+
+.form__checkbox input:focus+label::before {
+  outline: 1px solid $black;
+}

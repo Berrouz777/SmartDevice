@@ -112,6 +112,7 @@
   color: transparentize($color: $white, $amount: 0.5);
   border: none;
   transform: rotate(-90deg);
+  text-decoration: none;
   cursor: pointer;
 
   &:hover {
