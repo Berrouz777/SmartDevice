@@ -23,7 +23,6 @@
 
   @media (max-width: $tablet-width) {
     height: 52px;
-    // margin-bottom: 42px;
     padding-left: 19px;
     padding-bottom: 5px;
   }
@@ -64,7 +63,6 @@
 
   &:hover {
     background-color: transparentize($color: $white, $amount: 0.9);
-    // border-color: transparentize($color: $white, $amount: 0.9);
   }
 
   &:active {
@@ -100,7 +98,6 @@
   line-height: 120%;
   color: $white;
   cursor: pointer;
-  //   outline: 1px solid red;
 
   &::before {
     content: "";
@@ -144,10 +141,10 @@
   }
 }
 
-.form__checkbox input:checked+label::after {
+.form__checkbox input:checked + label::after {
   display: block;
 }
 
-.form__checkbox input:focus+label::before {
+.form__checkbox input:focus + label::before {
   outline: 1px solid $black;
 }

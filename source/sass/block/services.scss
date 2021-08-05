@@ -27,7 +27,7 @@
   }
 }
 
-.services__container>p {
+.services__container > p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 140%;
@@ -81,9 +81,7 @@
   display: block;
   position: relative;
   height: 620px;
-  position: relative;
   text-decoration: none;
-  //   outline: 1px solid green;
 
   &::before {
     content: "";
@@ -130,7 +128,6 @@
   width: 45%;
   margin: 52px 0 0 45px;
   padding: 0;
-  //   outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     width: 24%;

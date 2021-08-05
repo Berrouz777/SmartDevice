@@ -19,7 +19,6 @@
   background-size: 220px 317px;
   background-position: -30px 5px;
   background-repeat: no-repeat;
-//   outline: 1px solid red;
 
   @media (max-width: $tablet-width) {
     max-width: 529px;
@@ -138,6 +137,6 @@
   }
 
   @media (max-width: $mobile-width) {
-      margin-top: 30px;
+    margin-top: 30px;
   }
 }
